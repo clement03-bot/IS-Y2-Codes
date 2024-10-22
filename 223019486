@@ -1,0 +1,363 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package com.mycompany.java.script.work;
+
+/**
+ *
+ * @author LENOVO
+ */
+import java.util.Scanner;
+public class oddeven { 
+public static void main(String[] args) { 
+Scanner scn = new Scanner(System.in); 
+System.out.print("Please enter a number: "); 
+int number; 
+number = scn.nextInt();
+if (number % 2 == 0) { 
+System.out.println(number + " must be an Even number."); } 
+else { 
+System.out.println(number + " must be an odd number."); 
+}
+}
+    
+}
+
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package com.mycompany.java.script.work;
+
+/**
+ *
+ * @author LENOVO
+ */
+import java.util.Scanner;
+public class maks_grade {
+public static void main (String args[]){
+Scanner scn = new Scanner(System.in);
+System.out.print("Please enter your Grade with Capital letter: ");
+char Grade;
+Grade=scn.next().charAt(0);
+switch(Grade){
+case 'A' :
+System.out.println(" Grade's Message : Excellent");
+break;
+case 'B' :
+System.out.println(" Grade's Message : Very Good");
+break;
+case 'C' :
+System.out.println(" Grade's Message : Well Done");
+break;
+case 'D' :
+System.out.println(" Grade's Message : Satisfactory ");
+break;
+case 'F' :
+System.out.println(" Grade's Message : Fail");
+break;
+default:
+System.out.println(" Grade's Message : invalid input");
+}
+}    
+}
+
+
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package com.mycompany.java.script.work;
+
+/**
+ *
+ * @author LENOVO
+ */
+import java.util.Scanner;
+
+public class Leap_year {
+    public static void main(String[] args){
+      int year;
+      System.out.println("Enter an Year : ");
+      Scanner scn = new Scanner(System.in);
+      year = scn.nextInt();
+
+      if (((year % 4 == 0) && (year % 100!= 0)) || (year%400 == 0)){
+         System.out.println("entered year is a leap year");
+         
+         /*Check if the year is divisible by 4 but not 100 or divisible by 400
+         , DISPLAY "leap year ; Otherwise, DISPLAY "not leap year" */
+         
+      }
+      else{
+         System.out.println("entered year is not a leap year");
+      }
+      
+   }
+}    
+
+
+    
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package com.mycompany.java.script.work;
+
+/**
+ *
+ * @author LENOVO
+ */
+public class Largest_element {
+    public static void main(String[] args) {
+  
+        int[] numbers = {34, 23, 12, 45, 67, 89, 234, 26, 10, 30, 43};
+
+      
+        int largest = numbers[0];
+
+    
+        for (int i = 1; i < numbers.length; i++) {
+            if (numbers[i] > largest) {
+                largest = numbers[i];
+            }
+        }
+
+      
+        System.out.println("The largest element in the array is: " + largest);
+    }
+
+}
+
+
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package com.mycompany.java.script.work;
+
+import java.util.Scanner;
+/**
+ *
+ * @author LENOVO
+ */
+
+public class check_number {
+    public static void main (String arg[]){
+
+int number;
+Scanner scn = new Scanner(System.in);
+System.out.print("please enter the number : ");
+
+number=scn.nextInt();
+System.out.println();
+
+if(number > 0){
+System.out.print(+number);
+System.out.println(" : is a Positive number");
+}
+
+else if(number < 0){   
+System.out.print(+number);
+System.out.println(" : is a Negative number"); 
+}
+
+else{
+System.out.print(+number);
+System.out.println(" : is zero");
+} 
+
+}
+
+}
+
+
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package com.mycompany.java.script.work;
+
+/**
+ *
+ * @author LENOVO
+ */
+import java.util.Scanner;
+public class Triangle_0f_number {
+public static void main(String[] args) {
+Scanner sc = new Scanner(System.in);
+
+        // Get the number of rows from the user
+        System.out.print("Enter the number of rows: ");
+        int num = sc.nextInt();
+
+        // Loop to print the right-angled triangle
+        for (int i = 1; i <= num; i++) {
+            for (int j = i; j >= 1; j--) {
+                System.out.print(j);
+            }
+            System.out.println(); // Move to the next line
+        }
+
+        sc.close();
+    }
+} 
+    
+
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package com.mycompany.java.script.work;
+
+/**
+ *
+ * @author LENOVO
+ */
+import java.util.Scanner;
+public class Diamond_shape {
+    public static void main (String[]args){
+        Scanner obj = new Scanner(System.in);
+        
+        System.out.print("Enter the number for the diamond (half): ");
+        int num = obj.nextInt();
+        for (int i = 1; i <= num; i++) {
+        for (int j = num; j > i; j--) {
+        System.out.print(" ");
+        }
+            
+        for (int k = 1; k <= (2 * i - 1); k++) {
+        System.out.print("*");
+        }
+            
+        System.out.println();
+        }
+        for (int i = num - 1; i >= 1; i--) {
+            for (int j = num; j > i; j--) {
+                System.out.print(" ");
+            }
+            
+         for (int k = 1; k <= (2 * i - 1); k++) {
+        System.out.print("*");
+            }
+        System.out.println();
+        }
+
+      
+        }
+
+}
+
+
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package com.mycompany.java.script.work;
+
+/**
+ *
+ * @author LENOVO
+ */
+public class Average {
+    public static void main(String[] args) {
+     
+        int[] numbers = {10, 12, 34, 23, 56, 78};
+
+       
+        int sum = 0;
+        for (int num : numbers) {
+            sum += num;
+        }
+
+        double average = (double) sum / numbers.length;
+
+        System.out.println("The average is: " + average);
+    }
+}
+
+    
+
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package com.mycompany.java.script.work;
+
+/**
+ *
+ * @author LENOVO
+ */
+public class Reverse {
+    public static void main(String[] args) {
+        // Define the input array
+        int[] numbers = {3, 4, 6, 1, 9, 7, 5, 8};
+
+        System.out.println("Original Array:");
+        printArray(numbers);
+
+        // Reverse the array
+        reverseArray(numbers);
+
+        System.out.println("Reversed Array:");
+        printArray(numbers);
+    }
+
+    // Method to reverse the elements of the array
+    public static void reverseArray(int[] array) {
+        int left = 0, right = array.length - 1;
+        while (left < right) {
+            // Swap elements
+            int temp = array[left];
+            array[left] = array[right];
+            array[right] = temp;
+
+            // Move towards the center
+            left++;
+            right--;
+        }
+    }
+
+    // Method to print the elements of the array
+    public static void printArray(int[] array) {
+        for (int num : array) {
+            System.out.print(num + " ");
+        }
+        System.out.println();
+    }
+
+}
+
+
+
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package com.mycompany.java.script.work;
+
+/**
+ *
+ * @author LENOVO
+ */
+public class Largest_element {
+    public static void main(String[] args) {
+  
+        int[] numbers = {34, 23, 12, 45, 67, 89, 234, 26, 10, 30, 43};
+
+      
+        int largest = numbers[0];
+
+    
+        for (int i = 1; i < numbers.length; i++) {
+            if (numbers[i] > largest) {
+                largest = numbers[i];
+            }
+        }
+
+      
+        System.out.println("The largest element in the array is: " + largest);
+    }
+
+}
